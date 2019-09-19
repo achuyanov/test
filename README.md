@@ -1,1 +1,1 @@
-# [test](tut.by)
+# [test](https://www.tut.by)
