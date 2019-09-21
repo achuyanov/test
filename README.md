@@ -12,3 +12,10 @@ return function(workSheet, range){
     return obj;
 }
 ```
+# Andrei Chuyanov
+---
+##Contact:
+
+email: achuyanov@gmail.com
+skype: andrei.chuyanov
+mobile: +375297540133
