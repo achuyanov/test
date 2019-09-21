@@ -1,5 +1,14 @@
 # [test](https://www.tut.by)
 ```js
-/* create a new blank workbook */
-var wb = XLSX.utils.book_new();
+let getCellRangeFunc = this.getCellRange;
+return function(workSheet, range){
+    const dataFromExcel = getCellRangeFunc(workSheet, range)
+    const dataFromExcelLength = dataFromExcel.length
+    let obj = {}
+    for (let i = 0; i < dataFromExcelLength; i++) {
+        let subArray = dataFromExcel[i]
+        if (subArray.length > 1) obj[subArray[0]] = subArray[subArray.length-1]
+    }
+    return obj;
+}
 ```
